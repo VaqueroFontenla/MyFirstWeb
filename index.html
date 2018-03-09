@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Geoinmueble: encuentra tu lugar idóneo</title>
+		<meta name="description" content="Blueprint: Horizontal Drop-Down Menu" />
+		<meta name="keywords" content="horizontal menu, microsoft menu, drop-down menu, mega menu, javascript, jquery, simple menu" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<span>Geoinmueble</span>
+				<h1>Encuentra tu lugar idóneo</h1>
+			</header>
+			<div class="main">
+				<nav id="cbp-hrmenu" class="cbp-hrmenu">
+					<ul>
+						<li>
+							<a href="#">Inicio</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner">
+									<div>
+										<h4>Sobre nosotros</h4>
+											<p>Creemos que la búsqueda de una casa
+											es un proceso que está lleno de penumbra
+											y de falta de transparencia.
+											<br><br>Desde Geoinmueble queremos aportar luz
+											y claridad en la oscuridad, hacer nuestro trabajo
+											apoyados en los valores de la compañía: confianza,
+											claridad, optimismo y transparencia.</p>
+									</div>
+									<div>
+										<h4>Fundadores</h4>
+										<div class="cbp-hrsub-inner-1">
+											<div >
+												<h5>Lucas Goded Moreno</h5>
+												<img src="Lucas.jpg" width="50%" height="50%" alt="">
+										  </div>
+										  <div>
+											  <h5>Luis Gutiérrez Calvo </h5>
+												<img src="Luis.jpg" width="50%" height="50%" alt="">
+										  </div>
+										  <div>
+											  <h5>Loreto Vaquero Fontenla</h5>
+												<img src="Foto.jpg" width="50%" height="50%" alt="">
+										  </div>
+									  </div>
+									</div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+						<li>
+							<a href="#">Oferta Inmuebles</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner">
+									<div id="search-top">
+										<p class="home-phrase txt-bold h1-simulated">Realiza tu consulta</p>
+										<div id="operation-combo-container" class="comboBox">
+											 <input type="hidden" name="operation" id="operation-combo-hidden" value="1">
+											 <a href="#" tabindex="0">
+												 <ul id="operation-combo" class="homecombo">
+													 <li data-value="1" data-disabled="false" class="selected">Comprar</li>
+													 <li data-value="2" data-disabled="false" class="">Alquilar</li>
+													 <li data-value="share" data-disabled="false" class="">Compartir</li>
+											 	 </ul>
+												</a>
+										 	</div>
+											 <div id="typology-combo-container" class="comboBox">
+												 <input type="hidden" name="typology" id="typology-combo-hidden" value="1">
+												 <a href="#" tabindex="0">
+													 <ul id="typology-combo" class="homecombo">
+														 <li data-value="10" data-disabled="false" class="">Obra nueva</li>
+														 <li data-value="1" data-disabled="false" class="selected">Viviendas</li>
+														 <li data-value="9" data-disabled="true" class="">Vacacional</li>
+														 <li data-value="7" data-disabled="true" class="">Habitación</li>
+														 <li data-value="5" data-disabled="false" class="">Oficinas</li>
+														 <li data-value="6" data-disabled="false" class="">Locales o naves</li>
+														 <li data-value="4" data-disabled="false" class="">Garajes</li>
+														 <li data-value="12" data-disabled="false" class="">Trasteros</li>
+														 <li data-value="13" data-disabled="false" class="">Edificios</li>
+														 <li data-value="8" data-disabled="false" class="">Terrenos</li>
+												 	</ul>
+												 </a>
+											 </div>
+											 <div id="location-combo-container" class="comboBox">
+												 <input type="hidden" name="locationId" id="typology-combo-hidden">
+												 <a href="#" tabindex="0">
+												 	<ul id="location-combo" class="homecombo" name="locationId" size="8">
+														 <li data-value="0-EU-ES-15" data-disabled="false">A Coruña</li>
+														 <li data-value="0-EU-ES-01" data-disabled="false">Álava/Araba</li>
+														 <li data-value="0-EU-ES-02" data-disabled="false">Albacete</li>
+														 <li data-value="0-EU-ES-03" data-disabled="false">Alicante</li>
+														 <li data-value="0-EU-ES-04" data-disabled="false">Almería</li>
+														 <li data-value="0-EU-ES-53" data-disabled="false">Andorra</li>
+														 <li data-value="0-EU-ES-33" data-disabled="false">Asturias</li>
+														 <li data-value="0-EU-ES-05" data-disabled="false">Ávila</li>
+														 <li data-value="0-EU-ES-06" data-disabled="false">Badajoz</li>
+														 <li data-value="0-EU-ES-07" data-disabled="false">Baleares/Balears</li>
+														 <li data-value="0-EU-ES-08" data-disabled="false">Barcelona</li>
+														 <li data-value="0-EU-ES-48-01-001-020" data-disabled="false">Bilbao</li>
+														 <li data-value="0-EU-ES-09" data-disabled="false">Burgos</li>
+														 <li data-value="0-EU-ES-10" data-disabled="false">Cáceres</li>
+														 <li data-value="0-EU-ES-11" data-disabled="false">Cádiz</li>
+														 <li data-value="0-EU-ES-39" data-disabled="false">Cantabria</li>
+														 <li data-value="0-EU-ES-12" data-disabled="false">Castellón</li>
+														 <li data-value="0-EU-ES-55" data-disabled="false">Cerdanya Francesa</li>
+														 <li data-value="0-EU-ES-51" data-disabled="false">Ceuta</li>
+														 <li data-value="0-EU-ES-13" data-disabled="false">Ciudad Real</li>
+														 <li data-value="0-EU-ES-14" data-disabled="false">Córdoba</li>
+														 <li data-value="0-EU-ES-16" data-disabled="false">Cuenca</li>
+														 <li data-value="0-EU-ES-07-02" data-disabled="false">Formentera-Ibiza</li>
+														 <li data-value="0-EU-ES-35-02" data-disabled="false">Fuerteventura</li>
+														 <li data-value="0-EU-ES-17" data-disabled="false">Gerona/Girona</li>
+														 <li data-value="0-EU-ES-33-03-001-024" data-disabled="false">Gijón</li>
+														 <li data-value="0-EU-ES-35-01" data-disabled="false">Gran Canaria</li>
+														 <li data-value="0-EU-ES-18" data-disabled="false">Granada</li>
+														 <li data-value="0-EU-ES-19" data-disabled="false">Guadalajara</li>
+														 <li data-value="0-EU-ES-20" data-disabled="false">Guipúzcoa/Gipuzkoa</li>
+														 <li data-value="0-EU-ES-21" data-disabled="false">Huelva</li>
+														 <li data-value="0-EU-ES-22" data-disabled="false">Huesca</li>
+														 <li data-value="0-EU-ES-07-02" data-disabled="false">Ibiza-Formentera</li>
+														 <li data-value="0-EU-ES-23" data-disabled="false">Jaén</li>
+														 <li data-value="0-EU-ES-38-02" data-disabled="false">La Palma (Isla)</li>
+														 <li data-value="0-EU-ES-26" data-disabled="false">La Rioja</li>
+														 <li data-value="0-EU-ES-35-03" data-disabled="false">Lanzarote</li>
+														 <li data-value="0-EU-ES-35" data-disabled="false">Las Palmas</li>
+														 <li data-value="0-EU-ES-35-01-001-016" data-disabled="false">Las Palmas de Gran Canaria</li>
+														 <li data-value="0-EU-ES-24" data-disabled="false">León</li>
+														 <li data-value="0-EU-ES-25" data-disabled="false">Lérida/Lleida</li>
+														 <li data-value="0-EU-ES-26-01-001-089" data-disabled="false">Logroño</li>
+														 <li data-value="0-EU-ES-27" data-disabled="false">Lugo</li>
+														 <li data-value="0-EU-ES-28" data-disabled="false">Madrid</li>
+														 <li data-value="0-EU-ES-29" data-disabled="false">Málaga</li>
+														 <li data-value="0-EU-ES-07-01" data-disabled="false">Mallorca</li>
+														 <li data-value="0-EU-ES-52" data-disabled="false">Melilla</li>
+														 <li data-value="0-EU-ES-07-03" data-disabled="false">Menorca</li>
+														 <li data-value="0-EU-ES-06-02-002-083" data-disabled="false">Mérida</li>
+														 <li data-value="0-EU-ES-30" data-disabled="false">Murcia</li>
+														 <li data-value="0-EU-ES-31" data-disabled="false">Navarra/Nafarroa</li>
+														 <li data-value="0-EU-ES-32" data-disabled="false">Orense/Ourense</li>
+														 <li data-value="0-EU-ES-33-07-001-044" data-disabled="false">Oviedo</li>
+														 <li data-value="0-EU-ES-54" data-disabled="false">País Vasco Francés</li>
+														 <li data-value="0-EU-ES-34" data-disabled="false">Palencia</li>
+														 <li data-value="0-EU-ES-07-01-001-040" data-disabled="false">Palma de Mallorca</li>
+														 <li data-value="0-EU-ES-35-01-001-016" data-disabled="false">Palmas de Gran Canaria (Las)</li>
+														 <li data-value="0-EU-ES-31-01-001-201" data-disabled="false">Pamplona/Iruña</li>
+														 <li data-value="0-EU-ES-36" data-disabled="false">Pontevedra</li>
+														 <li data-value="0-EU-ES-37" data-disabled="false">Salamanca</li>
+														 <li data-value="0-EU-ES-20-01-001-069" data-disabled="false">San Sebastián/Donostia</li>
+														 <li data-value="0-EU-ES-38" data-disabled="false">Santa Cruz de Tenerife</li>
+														 <li data-value="0-EU-ES-39-06-001-075" data-disabled="false">Santander</li>
+														 <li data-value="0-EU-ES-15-07-001-078" data-disabled="false">Santiago de Compostela</li>
+														 <li data-value="0-EU-ES-40" data-disabled="false">Segovia</li>
+														 <li data-value="0-EU-ES-41" data-disabled="false">Sevilla</li>
+														 <li data-value="0-EU-ES-42" data-disabled="false">Soria</li>
+														 <li data-value="0-EU-ES-43" data-disabled="false">Tarragona</li>
+														 <li data-value="0-EU-ES-38-01" data-disabled="false">Tenerife</li>
+														 <li data-value="0-EU-ES-44" data-disabled="false">Teruel</li>
+														 <li data-value="0-EU-ES-45" data-disabled="false">Toledo</li>
+														 <li data-value="0-EU-ES-46" data-disabled="false">Valencia/València</li>
+														 <li data-value="0-EU-ES-47" data-disabled="false">Valladolid</li>
+														 <li data-value="0-EU-ES-01-01-001-059" data-disabled="false">Vitoria-Gasteiz</li>
+														 <li data-value="0-EU-ES-48" data-disabled="false">Vizcaya/Bizkaia</li>
+														 <li data-value="0-EU-ES-49" data-disabled="false">Zamora</li>
+														 <li data-value="0-EU-ES-50" data-disabled="false">Zaragoza</li>
+												</ul>
+											</a>
+										</div>
+									</div>
+									<div><br><br><button class="btn action h3-simulated">Buscar</button></div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+						<li>
+							<a href="#">Publica tu inmueble</a>
+							<div class="cbp-hrsub">
+								<div class="cbp-hrsub-inner">
+									<div>
+										<h4>Formulario de Inscripción</h4>
+										<p>Debes registrarte para publicar tu anuncio.
+										<br>Rellena este formulario con tus datos,
+										comprobaremos la veracidad de los mismos y publicaremos
+										tu anuncio</p>
+									</div>
+									<div>
+										<form action="/signup" method="post">
+  <p>
+    <label>¿Que deseas?</label><br>
+    <label>
+      <input type="radio" name="title" value="mr">
+      Vender
+    </label>
+    <label>
+      <input type="radio" name="title" value="mrs">
+      Alquilar
+    </label>
+  </p>
+  <p>
+    <label>Nombre</label><br>
+    <input type="text" name="first_name">
+  </p>
+  <p>
+    <label>Apellido</label><br>
+    <input type="text" name="last_name">
+  </p>
+  <p>
+    <label>Correo Electrónico</label><br>
+    <input type="email" name="email" required>
+  </p>
+  <p>
+    <label>Número de teléfono</label><br>
+    <input type="tel" name="phone">
+  </p>
+  <p>
+    <label>Contraseña</label><br>
+    <input type="password" name="password">
+  </p>
+  <p>
+    <label>Provincia</label><br>
+    <select>
+   		<option>Álava</option>
+			<option>A Coruña</option>
+			<option>Álava</option>
+			<option>Albacete</option>
+			<option>Alicante</option>
+			<option>Almería</option>
+			<option>Asturias</option>
+			<option>Ávila</option>
+			<option>Badajoz</option>
+			<option>Barcelona</option>
+			<option>Burgos</option>
+			<option>Cáceres</option>
+			<option>Cádiz</option>
+			<option>Cantabria</option>
+			<option>Castellón</option>
+			<option>Ceuta</option>
+			<option>Ciudad Real</option>
+			<option>Córdoba</option>
+			<option>Cuenca</option>
+			<option>Gipuzkoa</option>
+			<option>Girona</option>
+			<option>Granada</option>
+			<option>Guadalajara</option>
+			<option>Huelva</option>
+			<option>Huesca</option>
+			<option>Islas Baleares</option>
+			<option>Jaén</option>
+			<option>La Rioja</option>
+			<option>Las Palmas</option>
+			<option>León</option>
+			<option>Lleida</option>
+			<option>Lugo</option>
+			<option>Madrid</option>
+			<option>Málaga</option>
+			<option>Melilla</option>
+			<option>Murcia</option>
+			<option>Navarra</option>
+			<option>Ourense</option>
+			<option>Palencia</option>
+			<option>Pontevedra</option>
+			<option>Salamanca</option>
+			<option>Santa Cruz de Tenerife</option>
+			<option>Segovia</option>
+			<option>Sevilla</option>
+			<option>Soria</option>
+			<option>Tarragona</option>
+			<option>Teruel</option>
+			<option>Toledo</option>
+			<option>Valencia</option>
+			<option>Valladolid</option>
+			<option>Vizcaya</option>
+			<option>Zamora</option>
+			<option>Zaragoza</option>
+    </select>
+  </p>
+  <p>
+    <button>Inicia Sesión</button>
+  </p>
+</form>
+									</div>
+								</div><!-- /cbp-hrsub-inner -->
+							</div><!-- /cbp-hrsub -->
+						</li>
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/cbpHorizontalMenu.min.js"></script>
+		<script>
+			$(function() {
+				cbpHorizontalMenu.init();
+			});
+		</script>
+		<div class="container2">
+			<img src="vivienda.jpg">
+		</div>
+		<footer>
+			Práctica de clase HTML5 (html, csss, Javascript) <br>
+			Lucas Goded Moreno -  Luis Gutiérrez Calvo - Loreto Vaquero Fontenla
+		</footer>
+	</body>
+</html>
